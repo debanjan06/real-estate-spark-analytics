@@ -1,0 +1,31 @@
+city,property_type,listings,avg_days_on_market,median_days_on_market
+Chicago,multi_family,18,23.166666666666668,21
+Los Angeles,multi_family,13,26.76923076923077,26
+Los Angeles,townhouse,65,27.06153846153846,29
+San Francisco,single_family,45,27.733333333333334,28
+San Francisco,townhouse,12,27.75,25
+Chicago,condo,76,27.855263157894736,29
+Los Angeles,apartment,40,28.325,25
+New York,multi_family,23,28.47826086956522,27
+San Francisco,multi_family,4,28.5,17
+New York,condo,92,28.73913043478261,27
+Houston,single_family,109,28.853211009174313,28
+Houston,apartment,35,29.0,28
+Chicago,townhouse,64,29.0,25
+Chicago,single_family,131,29.412213740458014,30
+Other,multi_family,5068,29.572020520915547,29
+Other,single_family,39524,29.581444185811154,29
+Other,condo,24487,29.718952913790993,30
+Other,townhouse,19727,29.758452881837076,30
+New York,townhouse,68,29.764705882352942,32
+Other,apartment,9793,29.88277340957827,30
+Los Angeles,single_family,122,30.139344262295083,30
+Houston,condo,94,30.25531914893617,28
+New York,apartment,30,30.766666666666666,33
+New York,single_family,137,30.78832116788321,29
+Houston,townhouse,64,30.984375,30
+Los Angeles,condo,78,31.064102564102566,32
+Chicago,apartment,30,31.2,33
+San Francisco,condo,22,31.318181818181817,27
+San Francisco,apartment,15,32.86666666666667,33
+Houston,multi_family,14,34.57142857142857,37
