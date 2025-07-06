@@ -1,0 +1,57 @@
+
+COMPREHENSIVE REAL ESTATE ANALYSIS SUMMARY
+==========================================
+
+Dataset Overview:
+----------------
+- Total Properties: 100,000
+- Average Price: $724,825.99
+- Median Price: $445,200.00
+- Price Standard Deviation: $865,588.67
+- Average Days on Market: 29.7
+- Average Price per Sqft: $245.99
+
+Top 3 Cities by Average Price:
+-----------------------------
+San Francisco: $4,051,849.82
+New York: $1,637,016.72
+Los Angeles: $1,597,887.36
+
+Property Type Rankings:
+----------------------
+multi_family: $892,286.16
+single_family: $754,904.10
+townhouse: $723,632.70
+
+Machine Learning Results:
+------------------------
+Linear Regression: RMSE $814,196.37, MAE $477,013.26, R² 0.1255
+Random Forest: RMSE $822,524.80, MAE $482,080.95, R² 0.1075
+Gradient Boosted Trees: RMSE $817,187.26, MAE $478,673.22, R² 0.1191
+
+Top 5 Important Features (Random Forest):
+
+----------------------------------------
+sqft: 0.7995
+city_Houston: 0.0430
+distance_to_center: 0.0326
+city_Chicago: 0.0317
+city_New York: 0.0235
+
+Top Feature Categories by Importance:
+------------------------------------
+Physical Features: 0.8050
+Location Features: 0.1499
+Quality Features: 0.0297
+Type Features: 0.0154
+
+Key Insights:
+-------------
+1. Significant price variation across cities, with premium prices in major metropolitan areas
+2. Multi-family homes command the highest average prices
+3. Physical attributes (size, amenities) are the strongest predictors of property value
+4. Location features show considerable importance in price determination
+5. Neighborhood quality metrics have moderate impact on property values
+
+Analysis Time: 416.03 seconds
+Analysis Date: 2025-05-11 06:21:41

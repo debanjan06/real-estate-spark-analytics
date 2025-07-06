@@ -1,0 +1,16 @@
+linear_regression:
+  maxIter: 100
+  regParam: 0.1
+  elasticNetParam: 0.5
+
+random_forest:
+  numTrees: 100
+  maxDepth: 20
+  minInstancesPerNode: 1
+  seed: 42
+
+gradient_boosted_trees:
+  maxIter: 100
+  maxDepth: 5
+  stepSize: 0.1
+  seed: 42

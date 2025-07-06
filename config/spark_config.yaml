@@ -1,0 +1,21 @@
+driver:
+  memory: "8g"
+  memoryOverhead: "2g"
+  maxResultSize: "2g"
+
+executor:
+  memory: "8g"
+  cores: 4
+
+sql:
+  shuffle:
+    partitions: 10
+
+network:
+  timeout: "1200s"
+  heartbeatInterval: "120s"
+
+serializer: "org.apache.spark.serializer.KryoSerializer"
+
+arrow:
+  enabled: false
