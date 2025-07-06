@@ -290,7 +290,6 @@ pytest --cov=src tests/
 
 ## 📚 Documentation
 
-- **Research Paper**: [docs/research_paper.pdf](docs/research_paper.pdf)
 - **Methodology**: [docs/methodology.md](docs/methodology.md)
 - **API Documentation**: [docs/api_documentation.md](docs/api_documentation.md)
 
