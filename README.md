@@ -1,20 +1,24 @@
-🏠 Distributed Big Data Analytics Framework for Real Estate Market Prediction
+# 🏠 Distributed Big Data Analytics Framework for Real Estate Market Prediction
 Python Apache Spark License Jupyter
 
 A comprehensive machine learning framework for analyzing and predicting real estate market trends using Apache Spark's distributed computing capabilities. This project processes 100,000+ property records across major US metropolitan areas to identify key factors influencing property prices and market dynamics.
 
-🚀 Key Features
+## 🚀 Key Features
 Distributed Processing: Leverages Apache Spark for scalable analysis of large real estate datasets
 Advanced ML Models: Implements Linear Regression, Random Forest, and Gradient Boosted Trees
 Comprehensive Analytics: Market trends, geographic analysis, temporal patterns, and feature importance
 Interactive Visualizations: Professional charts and dashboards using matplotlib and seaborn
 Performance Optimization: Memory management, caching strategies, and query optimization
-📊 Key Findings
+
+## 📊 Key Findings
+
 Physical attributes (especially square footage) account for 80.3% of price prediction importance
 Geographic disparities: San Francisco properties average $4.73M vs Houston's $371K (12x difference)
 Property type hierarchy: Multi-family homes lead with $1.04M average value
 Model performance: Linear Regression achieved highest R² of 0.144
-🏗️ Architecture
+
+## 🏗️ Architecture
+
 Real Estate Analytics Framework
 ├── Data Ingestion (Spark SQL)
 ├── ETL Pipeline (Data Cleaning & Transformation)
@@ -22,7 +26,9 @@ Real Estate Analytics Framework
 ├── Distributed Model Training (MLlib)
 ├── Geospatial Analysis (Distance calculations)
 └── Visualization & Reporting
-📁 Project Structure
+
+## 📁 Project Structure
+
 real-estate-spark-analytics/
 │
 ├── data/
@@ -74,7 +80,9 @@ real-estate-spark-analytics/
 ├── README.md                   # This file
 ├── LICENSE                     # MIT License
 └── .gitignore                  # Git ignore rules
-🛠️ Installation & Setup
+
+## 🛠️ Installation & Setup
+
 Prerequisites
 Python 3.9+
 Java 8 or 11 (for Spark)
@@ -108,7 +116,9 @@ wget https://archive.apache.org/dist/spark/spark-3.5.5/spark-3.5.5-bin-hadoop3.t
 tar -xzf spark-3.5.5-bin-hadoop3.tgz
 export SPARK_HOME=/path/to/spark-3.5.5-bin-hadoop3
 export PATH=$SPARK_HOME/bin:$PATH
-🚀 Quick Start
+
+## 🚀 Quick Start
+
 1. Run the Complete Analysis
 # Start Jupyter notebook
 jupyter notebook notebooks/Apache_Spark-Notebook.ipynb
@@ -161,12 +171,16 @@ spark = get_spark_session(
     driver_memory="8g",
     executor_memory="8g"
 )
-📊 Model Performance
+
+## 📊 Model Performance
+
 Model	RMSE	MAE	R²
 Linear Regression	$809,224	$472,008	0.144
 Random Forest	$823,913	$481,738	0.113
 Gradient Boosted Trees	$812,142	$473,834	0.138
-🎯 Feature Importance
+
+## 🎯 Feature Importance
+
 Physical Features (82.8%)
 
 Square footage: 80.3%
@@ -179,7 +193,9 @@ Quality Features (2.8%)
 
 Neighborhood score: 1.8%
 Crime/walkability scores: 1.0%
-📈 Results & Visualizations
+
+## 📈 Results & Visualizations
+
 The analysis generates comprehensive visualizations including:
 
 Geographic Price Distribution: City-wise average prices
@@ -190,7 +206,8 @@ Temporal Analysis: Price trends over time
 Correlation Matrix: Feature relationship heatmap
 All visualizations are saved in the results/visualizations/ directory.
 
-🔧 Configuration
+##🔧 Configuration
+
 Spark Configuration (config/spark_config.yaml)
 driver:
   memory: "8g"
@@ -207,7 +224,9 @@ sql:
 
 network:
   timeout: "1200s"
-🧪 Testing
+  
+##🧪 Testing
+
 # Run unit tests
 python -m pytest tests/
 
@@ -216,10 +235,14 @@ python -m pytest tests/test_models.py
 
 # Generate coverage report
 pytest --cov=src tests/
-📚 Documentation
+
+## 📚 Documentation
+
 Methodology: docs/methodology.md
 API Documentation: docs/api_documentation.md
-🤝 Contributing
+
+## 🤝 Contributing
+
 Fork the repository
 Create a feature branch (git checkout -b feature/amazing-feature)
 Commit your changes (git commit -m 'Add amazing feature')
@@ -230,28 +253,34 @@ Follow PEP 8 style guidelines
 Add unit tests for new features
 Update documentation for API changes
 Ensure all tests pass before submitting PR
-📜 License
+
+## 📜 License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-👨‍💻 Author
+## 👨‍💻 Author
 Debanjan Shil
-
 GitHub: @debanjan06
 Email: bl.sc.p2dsc24032@bl.students.amrita.edu
 Institution: Amrita Vishwa Vidyapeetham, Bengaluru
 Program: M.Tech in Data Science
-🙏 Acknowledgments
+
+## 🙏 Acknowledgments
+
 Dr. Manju Venugopalan (Supervisor)
 Apache Spark Community
 Amrita School of Computing
 Real Estate Data Providers
-📊 Performance Metrics
+## 📊 Performance Metrics
+
 Dataset Size: 100,000 properties
 Processing Time: ~550 seconds
 Cities Analyzed: 6 major metropolitan areas
 Feature Categories: 4 (Physical, Location, Quality, Type)
 Model Accuracy: R² up to 0.144
-🔮 Future Enhancements
+
+##🔮 Future Enhancements
+
  Deep Learning models (CNN, RNN)
  Real-time data streaming with Spark Streaming
  Enhanced geospatial analysis with PostGIS
@@ -286,11 +315,13 @@ Model Accuracy: R² up to 0.144
 
 [12] R. Dwivedi, D. Dave, H. Naik, S. Singhal, R. Omer, P. Patel, B. Qian, Z. Wen, T. Shah, G. Morgan, et al., "Explainable ai (xai): Core ideas, techniques, and solutions," *ACM Computing Surveys*, vol. 55, no. 9, pp. 1–33, 2023.
 
-📞 Support
+## 📞 Support
+
 For questions or support, please:
 
 Check the documentation
 Search existing issues
 Create a new issue if needed
 Contact the author via email
-⭐ Star this repository if you find it helpful!
+
+## ⭐ Star this repository if you find it helpful!
