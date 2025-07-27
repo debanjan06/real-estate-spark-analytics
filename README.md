@@ -1,24 +1,30 @@
 # 🏠 Distributed Big Data Analytics Framework for Real Estate Market Prediction
-Python Apache Spark License Jupyter
+
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![Apache Spark](https://img.shields.io/badge/Apache%20Spark-3.5.5-orange.svg)](https://spark.apache.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
 
 A comprehensive machine learning framework for analyzing and predicting real estate market trends using Apache Spark's distributed computing capabilities. This project processes 100,000+ property records across major US metropolitan areas to identify key factors influencing property prices and market dynamics.
 
 ## 🚀 Key Features
-Distributed Processing: Leverages Apache Spark for scalable analysis of large real estate datasets
-Advanced ML Models: Implements Linear Regression, Random Forest, and Gradient Boosted Trees
-Comprehensive Analytics: Market trends, geographic analysis, temporal patterns, and feature importance
-Interactive Visualizations: Professional charts and dashboards using matplotlib and seaborn
-Performance Optimization: Memory management, caching strategies, and query optimization
+
+- **Distributed Processing**: Leverages Apache Spark for scalable analysis of large real estate datasets
+- **Advanced ML Models**: Implements Linear Regression, Random Forest, and Gradient Boosted Trees
+- **Comprehensive Analytics**: Market trends, geographic analysis, temporal patterns, and feature importance
+- **Interactive Visualizations**: Professional charts and dashboards using matplotlib and seaborn
+- **Performance Optimization**: Memory management, caching strategies, and query optimization
 
 ## 📊 Key Findings
 
-Physical attributes (especially square footage) account for 80.3% of price prediction importance
-Geographic disparities: San Francisco properties average $4.73M vs Houston's $371K (12x difference)
-Property type hierarchy: Multi-family homes lead with $1.04M average value
-Model performance: Linear Regression achieved highest R² of 0.144
+- **Physical attributes** (especially square footage) account for **80.3%** of price prediction importance
+- **Geographic disparities**: San Francisco properties average **$4.73M** vs Houston's **$371K** (12x difference)
+- **Property type hierarchy**: Multi-family homes lead with **$1.04M** average value
+- **Model performance**: Linear Regression achieved highest R² of **0.144**
 
 ## 🏗️ Architecture
 
+```
 Real Estate Analytics Framework
 ├── Data Ingestion (Spark SQL)
 ├── ETL Pipeline (Data Cleaning & Transformation)
@@ -26,9 +32,11 @@ Real Estate Analytics Framework
 ├── Distributed Model Training (MLlib)
 ├── Geospatial Analysis (Distance calculations)
 └── Visualization & Reporting
+```
 
 ## 📁 Project Structure
 
+```
 real-estate-spark-analytics/
 │
 ├── data/
@@ -80,15 +88,20 @@ real-estate-spark-analytics/
 ├── README.md                   # This file
 ├── LICENSE                     # MIT License
 └── .gitignore                  # Git ignore rules
+```
 
 ## 🛠️ Installation & Setup
 
-Prerequisites
-Python 3.9+
-Java 8 or 11 (for Spark)
-Apache Spark 3.5.5
-Minimum 8GB RAM recommended
-Option 1: Conda Environment (Recommended)
+### Prerequisites
+
+- Python 3.9+
+- Java 8 or 11 (for Spark)
+- Apache Spark 3.5.5
+- Minimum 8GB RAM recommended
+
+### Option 1: Conda Environment (Recommended)
+
+```bash
 # Clone the repository
 git clone https://github.com/debanjan06/real-estate-spark-analytics.git
 cd real-estate-spark-analytics
@@ -99,7 +112,11 @@ conda activate real-estate-analytics
 
 # Install additional dependencies
 pip install -r requirements.txt
-Option 2: Virtual Environment
+```
+
+### Option 2: Virtual Environment
+
+```bash
 # Clone the repository
 git clone https://github.com/debanjan06/real-estate-spark-analytics.git
 cd real-estate-spark-analytics
@@ -110,19 +127,30 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
-Spark Setup
+```
+
+### Spark Setup
+
+```bash
 # Download and setup Spark (if not already installed)
 wget https://archive.apache.org/dist/spark/spark-3.5.5/spark-3.5.5-bin-hadoop3.tgz
 tar -xzf spark-3.5.5-bin-hadoop3.tgz
 export SPARK_HOME=/path/to/spark-3.5.5-bin-hadoop3
 export PATH=$SPARK_HOME/bin:$PATH
+```
 
 ## 🚀 Quick Start
 
-1. Run the Complete Analysis
+### 1. Run the Complete Analysis
+
+```bash
 # Start Jupyter notebook
 jupyter notebook notebooks/Apache_Spark-Notebook.ipynb
-2. Command Line Execution
+```
+
+### 2. Command Line Execution
+
+```python
 from src.data_processing.etl_pipeline import RealEstateETL
 from src.models.regression_models import PropertyPricePredictor
 
@@ -134,13 +162,22 @@ predictor = PropertyPricePredictor()
 etl.process_data()
 results = predictor.train_models()
 predictor.generate_report()
-3. Generate Sample Data
+```
+
+### 3. Generate Sample Data
+
+```python
 from src.utils.data_generator import generate_property_data
 
 # Generate sample dataset
 data = generate_property_data(n_properties=10000)
-📈 Usage Examples
-Basic Price Prediction
+```
+
+## 📈 Usage Examples
+
+### Basic Price Prediction
+
+```python
 from src.models.regression_models import PropertyPricePredictor
 
 predictor = PropertyPricePredictor()
@@ -156,14 +193,22 @@ prediction = predictor.predict({
 })
 
 print(f"Predicted Price: ${prediction:,.2f}")
-Market Analysis
+```
+
+### Market Analysis
+
+```python
 from src.visualization.plots import MarketAnalyzer
 
 analyzer = MarketAnalyzer()
 analyzer.city_price_comparison()
 analyzer.temporal_trends()
 analyzer.feature_importance_plot()
-Custom Spark Configuration
+```
+
+### Custom Spark Configuration
+
+```python
 from src.utils.spark_config import get_spark_session
 
 spark = get_spark_session(
@@ -171,44 +216,48 @@ spark = get_spark_session(
     driver_memory="8g",
     executor_memory="8g"
 )
+```
 
 ## 📊 Model Performance
 
-Model	RMSE	MAE	R²
-Linear Regression	$809,224	$472,008	0.144
-Random Forest	$823,913	$481,738	0.113
-Gradient Boosted Trees	$812,142	$473,834	0.138
+| Model | RMSE | MAE | R² |
+|-------|------|-----|-----|
+| Linear Regression | $809,224 | $472,008 | **0.144** |
+| Random Forest | $823,913 | $481,738 | 0.113 |
+| Gradient Boosted Trees | $812,142 | $473,834 | 0.138 |
 
 ## 🎯 Feature Importance
 
-Physical Features (82.8%)
+1. **Physical Features (82.8%)**
+   - Square footage: 80.3%
+   - Property type: 2.5%
 
-Square footage: 80.3%
-Property type: 2.5%
-Location Features (13.9%)
+2. **Location Features (13.9%)**
+   - City indicators: 10.7%
+   - Distance to center: 3.2%
 
-City indicators: 10.7%
-Distance to center: 3.2%
-Quality Features (2.8%)
-
-Neighborhood score: 1.8%
-Crime/walkability scores: 1.0%
+3. **Quality Features (2.8%)**
+   - Neighborhood score: 1.8%
+   - Crime/walkability scores: 1.0%
 
 ## 📈 Results & Visualizations
 
 The analysis generates comprehensive visualizations including:
 
-Geographic Price Distribution: City-wise average prices
-Property Type Analysis: Price variations by property type
-Model Performance Comparison: RMSE, MAE, and R² metrics
-Feature Importance Charts: Random Forest feature rankings
-Temporal Analysis: Price trends over time
-Correlation Matrix: Feature relationship heatmap
-All visualizations are saved in the results/visualizations/ directory.
+- **Geographic Price Distribution**: City-wise average prices
+- **Property Type Analysis**: Price variations by property type
+- **Model Performance Comparison**: RMSE, MAE, and R² metrics
+- **Feature Importance Charts**: Random Forest feature rankings
+- **Temporal Analysis**: Price trends over time
+- **Correlation Matrix**: Feature relationship heatmap
 
-##🔧 Configuration
+All visualizations are saved in the `results/visualizations/` directory.
 
-Spark Configuration (config/spark_config.yaml)
+## 🔧 Configuration
+
+### Spark Configuration (`config/spark_config.yaml`)
+
+```yaml
 driver:
   memory: "8g"
   memoryOverhead: "2g"
@@ -224,9 +273,11 @@ sql:
 
 network:
   timeout: "1200s"
-  
-##🧪 Testing
+```
 
+## 🧪 Testing
+
+```bash
 # Run unit tests
 python -m pytest tests/
 
@@ -235,61 +286,75 @@ python -m pytest tests/test_models.py
 
 # Generate coverage report
 pytest --cov=src tests/
+```
 
 ## 📚 Documentation
 
-Methodology: docs/methodology.md
-API Documentation: docs/api_documentation.md
+- **Research Paper**: [docs/research_paper.pdf](docs/research_paper.pdf)
+- **Methodology**: [docs/methodology.md](docs/methodology.md)
+- **API Documentation**: [docs/api_documentation.md](docs/api_documentation.md)
 
 ## 🤝 Contributing
 
-Fork the repository
-Create a feature branch (git checkout -b feature/amazing-feature)
-Commit your changes (git commit -m 'Add amazing feature')
-Push to the branch (git push origin feature/amazing-feature)
-Open a Pull Request
-Development Guidelines
-Follow PEP 8 style guidelines
-Add unit tests for new features
-Update documentation for API changes
-Ensure all tests pass before submitting PR
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+### Development Guidelines
+
+- Follow PEP 8 style guidelines
+- Add unit tests for new features
+- Update documentation for API changes
+- Ensure all tests pass before submitting PR
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👨‍💻 Author
-Debanjan Shil
-GitHub: @debanjan06
-Email: bl.sc.p2dsc24032@bl.students.amrita.edu
-Institution: Amrita Vishwa Vidyapeetham, Bengaluru
-Program: M.Tech in Data Science
+
+**Debanjan Shil**
+- GitHub: [@debanjan06](https://github.com/debanjan06)
+- Email: bl.sc.p2dsc24032@bl.students.amrita.edu
+- Institution: Amrita Vishwa Vidyapeetham, Bengaluru
+- Program: M.Tech in Data Science
 
 ## 🙏 Acknowledgments
 
-Dr. Manju Venugopalan (Supervisor)
-Apache Spark Community
-Amrita School of Computing
-Real Estate Data Providers
+- Dr. Manju Venugopalan (Supervisor)
+- Apache Spark Community
+- Amrita School of Computing
+- Real Estate Data Providers
+
 ## 📊 Performance Metrics
 
-Dataset Size: 100,000 properties
-Processing Time: ~550 seconds
-Cities Analyzed: 6 major metropolitan areas
-Feature Categories: 4 (Physical, Location, Quality, Type)
-Model Accuracy: R² up to 0.144
+- **Dataset Size**: 100,000 properties
+- **Processing Time**: ~550 seconds
+- **Cities Analyzed**: 6 major metropolitan areas
+- **Feature Categories**: 4 (Physical, Location, Quality, Type)
+- **Model Accuracy**: R² up to 0.144
 
-##🔮 Future Enhancements
+## 🔮 Future Enhancements
 
- Deep Learning models (CNN, RNN)
- Real-time data streaming with Spark Streaming
- Enhanced geospatial analysis with PostGIS
- Web dashboard with Flask/Django
- Docker containerization
- Cloud deployment (AWS, Azure, GCP)
- API endpoints for model serving
+- [ ] Deep Learning models (CNN, RNN)
+- [ ] Real-time data streaming with Spark Streaming
+- [ ] Enhanced geospatial analysis with PostGIS
+- [ ] Web dashboard with Flask/Django
+- [ ] Docker containerization
+- [ ] Cloud deployment (AWS, Azure, GCP)
+- [ ] API endpoints for model serving
 
-## 📖 References
+## 📞 Support
+
+For questions or support, please:
+1. Check the [documentation](docs/)
+2. Search existing [issues](https://github.com/debanjan06/real-estate-spark-analytics/issues)
+3. Create a new issue if needed
+4. Contact the author via email
+
+## 📚 References
 
 [1] X. Meng, J. Bradley, B. Yavuz, E. Sparks, S. Venkataraman, D. Liu, J. Freeman, D. Tsai, M. Amde, S. Owen, et al., "Mllib: Machine learning in apache spark," *Journal of Machine Learning Research*, vol. 17, no. 34, pp. 1–7, 2016.
 
@@ -315,13 +380,4 @@ Model Accuracy: R² up to 0.144
 
 [12] R. Dwivedi, D. Dave, H. Naik, S. Singhal, R. Omer, P. Patel, B. Qian, Z. Wen, T. Shah, G. Morgan, et al., "Explainable ai (xai): Core ideas, techniques, and solutions," *ACM Computing Surveys*, vol. 55, no. 9, pp. 1–33, 2023.
 
-## 📞 Support
-
-For questions or support, please:
-
-Check the documentation
-Search existing issues
-Create a new issue if needed
-Contact the author via email
-
-## ⭐ Star this repository if you find it helpful!
+**⭐ Star this repository if you find it helpful!**
